@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tax Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="area_input">
+        <fieldset>
+            <legend>Informações <span>Informations</span></legend>
+            <label>
+                <div class="label_tag">Nome <span> Name</span></div>
+
+                <input type="text" name="name" class="name_input" placeholder="Nome" required autocomplete="off" >
+            </label>
+            <label>
+                <div class="label_tag">Valor <span> Value</span></div>
+
+                <input type="number" class="value_input" name="value" placeholder="Valor" />
+            </label>
+
+            <button class="calculate">CALCULATE</button>
+            <button class="reset">RESET</button>
+        </fieldset>
+    </div>
+
+    <div class="area_info">
+        <h1>Resultado
+            <span>Results</span>
+        </h1>
+        
+        <div class="informations">
+        </div>
+    </div>
+
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
