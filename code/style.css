@@ -18,6 +18,7 @@ body {
 .area--click {
     width: auto;
     display: flex;
+    height: 342px;
     justify-content: space-evenly;
     animation-name: slide;
     animation-duration: 3s;
@@ -177,13 +178,13 @@ h1 span {
 
 
 
-@media (min-width: 470px) and (max-width: 750px) {
+@media (min-width: 470px) and (max-width: 850px) {
     .area--click {
         flex-wrap: wrap;
     }
 
     .input_field {
-        height: 356px;
+        height: 298px;
     }
     .reveal-results {
         margin-top: 30px;
