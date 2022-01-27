@@ -39,7 +39,7 @@ calculate.addEventListener('click',()=> {
     }
     
     let span_name = document.querySelector('.span_0');
-    span_name.innerHTML = `Nome <span>Name</span>= ${nameInput} `;
+    span_name.innerHTML = `Nome <span>Name =</span>  ${nameInput} `;
 
     let imposto = document.querySelector('.span_1');
     imposto.innerHTML = `IR = ${results.imposto.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })}`;
@@ -59,13 +59,13 @@ calculate.addEventListener('click',()=> {
     let sum = results.imposto + results.esll + results.pis + results.cofins;
 
     let taxTotal = document.querySelector('.span_6');
-    taxTotal.innerHTML = `Impostos Total <span>Tax Amount</span> = ${sum.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })}`;
+    taxTotal.innerHTML = `Total impostos<span>Tax Amount</span> = ${sum.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })}`;
 
     let netValue = document.querySelector('.span_7');
     netValue.innerHTML = `Valor Líquido <span>Net value</span> = ${(results.grossValue - sum).toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })}`;
 
     calculate.style.display = 'none';
-    clear()
+    clear();
 }) 
 
 reset.addEventListener('click', ()=> {
@@ -74,7 +74,7 @@ reset.addEventListener('click', ()=> {
 
     informations.innerHTML = '';
     calculate.style.display = '';
-    clear()
+    clear();
 
 })
 
